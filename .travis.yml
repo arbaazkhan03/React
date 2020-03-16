@@ -2,8 +2,8 @@ sudo : required
 services :
   - docker
 before-install :
-  - docker build -t arbaazkhan03/React -f Dockerfile.dev   
+  - docker build -t arbaazkhan03/react -f Dockerfile.dev   
 
 script:
-  - docker run arbaazkhan03/React npm run test -- --coverage
+  - docker run arbaazkhan03/react npm run test -- --coverage
   
